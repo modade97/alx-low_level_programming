@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE -o $CIFILE.s
+gcc -S "$CFILE" -o "$CIFILE.s"
