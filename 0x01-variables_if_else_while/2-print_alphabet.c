@@ -12,7 +12,7 @@ int main(void)
 	while (alphabet <= 'z')
 
 	{
-		printf("%c ", alphabet);
+		printf("%c", alphabet);
 		alphabet++; /* keeps adding new alphabets until 'z' */
 	}
 	printf("\n");
