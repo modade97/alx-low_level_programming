@@ -10,7 +10,10 @@ int main(void)
 
 	for (alpbt = 'z'; alpbt >= 'a'; alpbt--)
 	{
-		putchar(alpbt);
+		if (alpbt != '`')
+		{
+			putchar(alpbt);
+		}
 	}
 	putchar(alpbt);
 	return (0);
