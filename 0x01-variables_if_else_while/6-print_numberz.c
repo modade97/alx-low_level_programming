@@ -10,7 +10,7 @@ int main(void)
 
 	for (n = 0; n < 10; n++)
 	{
-		char sd_char = '0' + n;
+		int sd_char = '0' + n;
 
 		putchar(sd_char);
 	}
