@@ -6,9 +6,12 @@
  */
 int main(void)
 {
-	for (int m = 0; m < 100; ++m)
+	int m;
+	int n;
+
+	for (m = 0; m < 100; ++m)
 	{
-		for (int n = m; n < 100; ++n)
+		for (n = m; n < 100; ++n)
 		{
 			int m1 = m / 10;
 			int m2 = m % 10;
