@@ -1,6 +1,4 @@
-carrie@ubuntu:/debugging$ cat 3-convert_day.c
 #include "main.h"
-
 /**
 * convert_day - converts day of month to day of year, without accounting
 * for leap year
