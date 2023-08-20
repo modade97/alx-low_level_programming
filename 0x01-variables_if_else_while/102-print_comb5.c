@@ -1,33 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
- *
  * Return: always 0
  */
+
 int main(void)
 {
 	int m;
 	int n;
 
-	for (m = 0; m < 100; ++m)
+	for (m = 0; m <= 98; m++)
 	{
-		for (n = m; n < 100; ++n)
+		for (n = m + 1; n <= 99; n++)
 		{
-			int m1 = m / 10;
-			int m2 = m % 10;
-			int n1 = n / 10;
-			int n2 = n % 10;
-
-			putchar(m1 + '0');
-			putchar(m2 + '0');
+			putchar((m / 10) + '0');
+			putchar((m % 10) + '0');
 			putchar(' ');
-			putchar(n1 + '0');
-			putchar(n2 + '0');
-			if (m != 99 || n != 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar((n / 10) + '0');
+			putchar((n % 10) + '0');
+			if (m == 98 && n == 99)
+			continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
