@@ -2,14 +2,14 @@
 /**
  * cap_string - string function
  * @s: function parameter
- * Return: pparameter s
+ * Return: parameter s
  */
 
 char *cap_string(char *s)
 {
 	int i, j;
-	char sp[13] = {' ', '\t', '\n', ',',
-	';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char sp[13] = {' ', '\t', '\n', ',', ';',
+'.', '!', '?', '"', '(', ')', '{', '}'};
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
