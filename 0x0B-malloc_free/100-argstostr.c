@@ -14,7 +14,9 @@ char *argstostr(int ac, char **av)
 	int k = 0;
 	int count = 0;
 	char *rtm;
-
+	
+	if (ac == 0 || av == NULL)
+		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
@@ -22,7 +24,7 @@ char *argstostr(int ac, char **av)
 		j = 0;
 		count++;
 	}
-	rtm = malloc(sizeof(char) * count + 1);
+	rtm = malloc((sizeof(char) * count) + ac + 1);
 	if (rtm == NULL)
 		return (NULL);
 
