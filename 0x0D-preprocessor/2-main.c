@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - function to print out the file name of the program using predefined macros
+ * main - print file name of the program using predefined macros
  * Return: 0
  */
 
